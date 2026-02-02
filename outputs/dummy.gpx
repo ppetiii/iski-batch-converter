@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="iSKI-Batch-Converter" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Demo Resort - 2025-01-01T09:00:00.000Z</name>
+    <time>2025-01-01T09:00:00.000Z</time>
+  </metadata>
+  <trk>
+    <name>iSKI 12345 (Demo Resort)</name>
+    <type>Skiing</type>
+    <trkseg>
+      <trkpt lat="45.001" lon="10.001">
+        <ele>2000</ele>
+        <time>2024-01-01T09:00:00Z</time>
+      </trkpt>
+      <trkpt lat="45.002" lon="10.002">
+        <ele>1995</ele>
+        <time>2024-01-01T09:00:10Z</time>
+      </trkpt>
+      <trkpt lat="45.003" lon="10.003">
+        <ele>1990</ele>
+        <time>2024-01-01T09:00:20Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

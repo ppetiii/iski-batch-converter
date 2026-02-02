@@ -1,0 +1,14 @@
+# Python junk
+__pycache__/
+*.pyc
+
+# Ignote my data
+save/
+
+# Ignore everything in inputs and outputs instead the dummy
+inputs/*
+outputs/*
+!inputs/dummy.json
+!outputs/dummy.gpx
+!inputs/.gitkeep
+!outputs/.gitkeep
