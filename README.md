@@ -1,6 +1,6 @@
 # iski-batch-converter
 
-Convert iSki Tracker tracks to gpx files.
+Convert iSki Tracker tracks to gpx files. This way you can import them to Slopes, Ski Tracks, Strava etc.
 
 Usage:
 1. Find your tracks on: https://iski.cc/en/community/tracks
