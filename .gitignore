@@ -5,7 +5,7 @@ __pycache__/
 # Ignote my data
 save/
 
-# Ignore everything in inputs and outputs instead the dummy
+# Ignore everything in inputs and outputs aside the dummies
 inputs/*
 outputs/*
 !inputs/dummy.json

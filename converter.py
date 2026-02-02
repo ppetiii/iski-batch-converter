@@ -7,7 +7,7 @@ input_folder_name = 'inputs'
 output_folder_name = 'outputs'
 # ================================================
 
-# 1. Setup paths
+# Setup paths
 script_dir = os.path.dirname(os.path.abspath(__file__))
 input_dir = os.path.join(script_dir, input_folder_name)
 output_dir = os.path.join(script_dir, output_folder_name)
@@ -32,11 +32,11 @@ if not json_files:
 
 print(f"Found {len(json_files)} files. Starting conversion...\n")
 
-# 2. Loop through every file
+# Loop through every file
 for filename in json_files:
     input_filepath = os.path.join(input_dir, filename)
     
-    # Define output filename (e.g., "1.json" -> "1.gpx")
+    # Define output filename
     output_filename = os.path.splitext(filename)[0] + ".gpx"
     output_filepath = os.path.join(output_dir, output_filename)
 
@@ -48,7 +48,7 @@ for filename in json_files:
         # CHECK DATA
         track_string = data.get("track", "")
         if not track_string:
-            print(f"⚠️  Skipping {filename}: No track data found inside.")
+            print(f"Skipping {filename}: No track data found inside.")
             continue
 
         # PREPARE GPX HEADER
@@ -99,12 +99,12 @@ for filename in json_files:
         with open(output_filepath, 'w', encoding='utf-8') as f:
             f.write("\n".join(gpx_content))
 
-        print(f"✅ Converted {filename} -> {output_filename} ({point_count} points)")
+        print(f"Converted {filename} -> {output_filename} ({point_count} points)")
 
     except json.JSONDecodeError:
-        print(f"❌ Error in {filename}: Invalid JSON format.")
+        print(f"Error in {filename}: Invalid JSON format.")
     except Exception as e:
-        print(f"❌ Error in {filename}: {str(e)}")
+        print(f"Error in {filename}: {str(e)}")
 
 print("\n---------------------------------------------------")
 print(f"All done! Check the '{output_folder_name}' folder.")
