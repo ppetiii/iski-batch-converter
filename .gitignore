@@ -2,7 +2,7 @@
 __pycache__/
 *.pyc
 
-# Ignote my data
+# Ignore my data
 save/
 
 # Ignore everything in inputs and outputs aside the dummies
